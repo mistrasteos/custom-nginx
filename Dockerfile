@@ -34,7 +34,7 @@ RUN wget github.com/PCRE2Project/pcre2/releases/download/pcre${PCRE_VERSION}/pcr
 RUN wget https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
     tar zxf nginx-${NGINX_VERSION}.tar.gz && \
     cd nginx-${NGINX_VERSION} && \
-    ./configure --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-pcre=../pcre${PCRE_VERSION} --with-stream && \
+    ./configure --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-pcre=../pcre${PCRE_VERSION} --with-stream --with-http_stub_status_module --with-debug && \
     make && \
     make install
 
