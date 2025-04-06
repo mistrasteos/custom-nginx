@@ -40,6 +40,9 @@ ghcr.io/mistrasteos/custom-nginx:latest
 # Links
 * https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#sources
 * https://docs.github.com/en/actions/writing-workflows/quickstart
+* https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images
+* https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable
+* https://docs.docker.com/build/building/variables/#arg-usage-example
 
 # TODO
 * Image is too big, maybe use another base image
